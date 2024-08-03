@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            width: 90%;
+            margin: auto;
+            border: solid black 1px;
+            grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+        #container > div{
+            aspect-ratio: 3 / 2;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        object-position: center;        }
+    </style>
+</head>
+<body>
+    <h3>css aspect ratio property</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi labore nostrum accusamus animi facilis sit, optio sint incidunt cumque nam ducimus consequuntur ut nisi quia consectetur vero tenetur. Ad dolore rem omnis ab quibusdam voluptatum animi quis. Ratione sed molestias natus exercitationem, quam suscipit neque. At quisquam perferendis natus nemo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto inventore asperiores placeat ex omnis illo suscipit. Amet, sunt! Voluptates ipsum reprehenderit, nihil fuga iure quos quam cum aspernatur architecto minus soluta officiis corporis animi, quod rerum, facere debitis commodi velit nam! Doloremque dolores quam nostrum laboriosam aspernatur adipisci, molestiae accusantium distinctio mollitia similique reiciendis! Illum quos incidunt sunt voluptatem. Blanditiis alias in suscipit porro! Reprehenderit, tempora veniam atque dolorum sint totam laudantium fugiat saepe provident necessitatibus consequuntur, minima neque harum similique nulla mollitia aliquam voluptate deserunt eaque aut illo architecto rerum. Perspiciatis assumenda amet minus earum qui. Nulla, perferendis.</p>
+    <div id="container">
+        <div><img src="https://www.w3schools.com/cssref/img_chania.jpg" alt="alley" width="400" height="345"></div>
+        <div><img src="https://www.w3schools.com/cssref/img_flowers.jpg" alt="flowers by the street"width="600" height="400"></div>
+        <div><img src="https://www.w3schools.com/cssref/img_mountains.jpg" alt="mountains"width="600"height="400"></div>
+        <div><img src="https://www.w3schools.com/cssref/img_5terre.jpg" alt="Cinque Terre" height="400" width="600"></div>
+    </div>
+</body>
+</html>
